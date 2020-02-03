@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="stage" width="640" height="480"></canvas>
+    <script src="sprite.js"></script>
+    <script src="renderer.js"></script>
+    <script src="game.js"></script>
+    <script src="ai.js"></script>
+    <script>
+
+        // const canvas = document.getElementById('stage')
+        // const renderer = new Renderer(canvas)
+
+        // const game = new Game(renderer)
+
+        
+
+        // let walls = []
+        // let car = new Car(300, 100, 90)
+        // car.reset(300, 100, 90)
+        // game.addCar(car)
+
+        // let keyboard = {}
+
+        // function gameloop() {
+        //     if (keyboard.right) car.turn(3)
+        //     if (keyboard.left) car.turn(-3)
+        //     if (keyboard.up) car.speedUp(0.03)
+        //     if (keyboard.down) car.speedUp(-0.1)
+
+        //     renderer.focusOn(car.x, car.y)
+        //     renderer.drawText(`x:${Math.floor(car.x)}`, 10, 20)
+        //     renderer.drawText(`y:${Math.floor(car.y)}`, 10, 40)
+        //     renderer.drawText(`speed: ${Math.floor(car.speed)}`, 10, 60)
+        //     renderer.drawText(`status: ${car.status}`, 10, 80)
+
+        //     requestAnimationFrame(gameloop)
+        // }
+        // gameloop()
+
+        // window.addEventListener('keydown', (e) => {
+        //     if (e.keyCode === 37) keyboard.left = true
+        //     if (e.keyCode === 38) keyboard.up = true
+        //     if (e.keyCode === 39) keyboard.right = true
+        //     if (e.keyCode === 40) keyboard.down = true
+        // })
+
+        // window.addEventListener('keyup', (e) => {
+        //     if (e.keyCode === 37) keyboard.left = false
+        //     if (e.keyCode === 38) keyboard.up = false
+        //     if (e.keyCode === 39) keyboard.right = false
+        //     if (e.keyCode === 40) keyboard.down = false
+        // })
+
+        // let map = [[{"x":57,"y":162},{"x":108,"y":108},{"x":240,"y":66},{"x":636,"y":54},{"x":1056,"y":63},{"x":1539,"y":72},{"x":1752,"y":114},{"x":1839,"y":216},{"x":1866,"y":462},{"x":1815,"y":624},{"x":1527,"y":708},{"x":1284,"y":678},{"x":1128,"y":633},{"x":972,"y":636},{"x":939,"y":723},{"x":954,"y":807},{"x":1059,"y":906},{"x":1206,"y":936},{"x":1365,"y":885},{"x":1524,"y":789},{"x":1674,"y":753},{"x":1761,"y":783},{"x":1824,"y":849},{"x":1854,"y":1059},{"x":1818,"y":1293},{"x":1677,"y":1383},{"x":1536,"y":1398},{"x":1116,"y":1401},{"x":759,"y":1323},{"x":630,"y":1305},{"x":495,"y":1332},{"x":456,"y":1368},{"x":396,"y":1404},{"x":216,"y":1410},{"x":72,"y":1350},{"x":18,"y":1125},{"x":48,"y":948},{"x":183,"y":753},{"x":189,"y":633},{"x":147,"y":522},{"x":57,"y":423},{"x":36,"y":276},{"x":42,"y":207},{"x":54,"y":168}],[{"x":219,"y":201},{"x":372,"y":174},{"x":789,"y":168},{"x":1281,"y":183},{"x":1551,"y":207},{"x":1662,"y":276},{"x":1692,"y":411},{"x":1656,"y":495},{"x":1527,"y":549},{"x":1356,"y":534},{"x":1167,"y":489},{"x":903,"y":471},{"x":789,"y":531},{"x":720,"y":669},{"x":711,"y":831},{"x":750,"y":954},{"x":897,"y":1071},{"x":1071,"y":1113},{"x":1296,"y":1080},{"x":1506,"y":996},{"x":1608,"y":918},{"x":1656,"y":948},{"x":1674,"y":1026},{"x":1659,"y":1164},{"x":1611,"y":1233},{"x":1530,"y":1245},{"x":1296,"y":1257},{"x":1101,"y":1248},{"x":786,"y":1170},{"x":639,"y":1143},{"x":486,"y":1164},{"x":366,"y":1230},{"x":261,"y":1254},{"x":204,"y":1221},{"x":177,"y":1155},{"x":207,"y":1083},{"x":234,"y":963},{"x":375,"y":774},{"x":417,"y":675},{"x":390,"y":558},{"x":330,"y":432},{"x":243,"y":327},{"x":198,"y":264},{"x":216,"y":207}]]
+        // map.forEach(points => game.loadMap(points))
+    </script>
+</body>
+
+</html>

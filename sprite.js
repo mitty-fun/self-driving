@@ -107,6 +107,7 @@ class Car extends Point {
 
     turn(direction) {
         if (this.status == 'broken') return
+        if (isNaN(direction)) return
         if (direction > this.speed) direction = this.speed
         if (direction < -this.speed) direction = -this.speed
         this.direction += direction
@@ -114,6 +115,7 @@ class Car extends Point {
 
     speedUp(speed) {
         if (this.status == 'broken') return
+        if (isNaN(speed)) return
         this.speed += speed
         if (this.speed < 0) this.speed = 0
     }
